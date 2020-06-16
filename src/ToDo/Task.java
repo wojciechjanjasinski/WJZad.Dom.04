@@ -6,18 +6,21 @@ public class Task {
     int priority;
     Person person;
 
-    Task(String name, String description) {
+    public Task(String name, String description) {
         this.name = name;
         this.description = description;
     }
 
-    Task(String name, String description, int priority) {
-        this(name, description);
+    public Task(String name, String description, int priority) {
+        this.name = name;
+        this.description = description;
         this.priority = priority;
     }
 
-    Task(String name, String description, int priority, Person person) {
-        this(name, description, priority);
+    public Task(String name, String description, int priority, Person person) {
+        this.name = name;
+        this.description = description;
+        this.priority = priority;
         this.person = person;
     }
 
@@ -40,6 +43,23 @@ public class Task {
                 ", description='" + description + '\'' +
                 ", priority=" + priority +
                 ", person=" + person +
+                '}';
+    }
+
+
+    public String toStringOne() {
+        return "Task{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", priority=" + priority +
+                '}';
+    }
+
+
+    public String toStringTwo() {
+        return "Task{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
                 '}';
     }
 }

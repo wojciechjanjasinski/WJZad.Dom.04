@@ -15,13 +15,13 @@ public class ToDoLists {
         System.out.println("Czy to zadanie ma niski priorytet? " + taskTwo.lowPriority());
 
         Task taskThree = new Task("Pozmywać naczynia w biurze", "Po ostatniej imprezie biurowej zostało mnóstwo naczyń do umycia", -1);
-        System.out.println(taskThree.toString());
+        System.out.println(taskThree.toStringOne());
         System.out.println("Czy to zadanie ma wysoki priorytet? " + taskThree.highPriority());
         System.out.println("Czy to zadanie ma umiarkowany priorytet? " + taskThree.mediumPriority());
         System.out.println("Czy to zadanie ma niski priorytet? " + taskThree.lowPriority());
 
         Task taskFour = new Task("wynieść śmieci", "po tygodniu pracy w biurze zostało mnóstwo śmieci");
-        System.out.println(taskFour.toString());
+        System.out.println(taskFour.toStringTwo());
         System.out.println("Czy to zadanie ma wysoki priorytet? " + taskFour.highPriority());
         System.out.println("Czy to zadanie ma umiarkowany priorytet? " + taskFour.mediumPriority());
         System.out.println("Czy to zadanie ma niski priorytet? " + taskFour.lowPriority());
