@@ -9,5 +9,7 @@ public class TimeTraveling {
         System.out.println(personOne.toString());
         timeMachine.timeTravel(personOne, 7);
         System.out.println(personOne.toString());
+        timeMachine.backInTime(personOne);
+        System.out.println(personOne.toString());
     }
 }
