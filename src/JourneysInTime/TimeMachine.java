@@ -3,8 +3,8 @@ package JourneysInTime;
 public class TimeMachine {
     Person person;
 
-    void backInTime() {
-        person.age++;
+    void backInTime(Person person) {
+        person.age--;
     }
 
     void timeTravel(Person person, int amount) {
