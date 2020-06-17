@@ -4,7 +4,7 @@ public class TimeMachine {
     Person person;
 
     void backInTime(Person person) {
-        --person.age;
+        person.age--;
     }
 
     void timeTravel(Person person, int amount) {
